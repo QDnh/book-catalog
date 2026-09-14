@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Catalog</title>
+</head>
+<body>
+    <nav>
+    <a href="{% url 'books' %}">Books</a> |
+    <a href="{% url 'publishers' %}">Publishers</a> |
+    <a href="{% url 'reviews' %}">Reviews</a>
+</nav>
+
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
